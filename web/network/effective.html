@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>判断网络质量</title>
+  </head>
+  <body>
+    <div>
+      网络状态判断
+      <p>不支持Safari浏览器</p>
+    </div>
+
+    <script type="text/javascript">
+      <!-- 默认网络好 -->
+      let domId = "fast"
+      if (/\slow-2g|3g|3g/.test(navigator.connection.effectiveType)) {
+        // 慢
+        domId = "slow"
+      } else {
+        // 快
+        domId = "fast"
+      }
+      
+      function onConnectionChange(){
+        const { downlink, effectiveType, rtt, saveData } = navigator.connection;
+        console.log(`有效的网络连接类型：${effectiveType}`);
+        console.log(`估算的下行速度/带宽：${downlink}`);
+        console.log(`估算的往返时间：${rtt}ms`);
+        console.log(`打开/请求数据保护模式：${saveData}`);
+      }
+
+      navigator.connection.addEventListener('change', onConnectionChange);
+    </script>
+  </body>
+</html>
