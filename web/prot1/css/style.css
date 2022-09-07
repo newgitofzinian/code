@@ -1,11 +1,11 @@
 body{
-<<<<<<< HEAD
-=======
-  margin: 50px auto; 
+/* <<<<<<< HEAD
+======= */
+  margin: 50px auto;
   /* //为了和页面中的其他块拉开距离 */
   height: 300px;
   width: 300px;
->>>>>>> 1fda217bd4f0147325a7542e7d838f6aa93b55c4
+/* >>>>>>> 1fda217bd4f0147325a7542e7d838f6aa93b55c4 */
   align-items: center;
   background-color: #171717;
 }
@@ -22,8 +22,8 @@ body{
   transition: 0.5s;
   background-size: 300px 300px;
   background-image: url(https://alanmajchrowicz.com/wp-content/uploads/2019/01/glacier_peak_image_lake_north_cascades_washington_58245.jpg);
-<<<<<<< HEAD
-=======
+/* <<<<<<< HEAD
+======= */
   position: relative;
 }
 
@@ -63,5 +63,5 @@ body{
   left: 0;
   top: 0;
   box-shadow: inset 0 0 0 0px #fff;
->>>>>>> 1fda217bd4f0147325a7542e7d838f6aa93b55c4
+/* >>>>>>> 1fda217bd4f0147325a7542e7d838f6aa93b55c4 */
 }
